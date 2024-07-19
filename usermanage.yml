@@ -1,5 +1,4 @@
---- # Loops Playbook
-
+--- # Loops Playbook to create multiple users on linux nodes
 - hosts: demo
   user: ansible
   become: yes
@@ -16,3 +15,4 @@
         - james
         - Alex
         - Sumit
+...
