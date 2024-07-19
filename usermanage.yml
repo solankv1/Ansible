@@ -1,0 +1,18 @@
+--- # Loops Playbook
+
+- hosts: demo
+  user: ansible
+  become: yes
+  connection: ssh
+
+  tasks:
+    - name: Adding Users on Linux Nodes
+      action: user name='{{item}}' state=present
+      with_items:
+        - vivek
+        - rohit
+        - kunal
+        - mohit
+        - james
+        - Alex
+        - Sumit
